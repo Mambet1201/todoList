@@ -7,7 +7,7 @@ import "./Appp.css";
 
 const defaultTodos = [
   {
-    title: "jod",
+    title: "Работа",
     tasks: [
       { completed: false, note: "Созвониться с поставщиками", id: uuidv4() },
       { completed: false, note: "Согласовать отпуск", id: uuidv4() },
@@ -17,7 +17,7 @@ const defaultTodos = [
     id: uuidv4(),
   },
   {
-    title: "hobbi",
+    title: "Хобби",
     tasks: [
       { completed: false, note: "Заказать удочку", id: uuidv4() },
       { completed: false, note: "Проверить экипировку", id: uuidv4() },
@@ -35,15 +35,15 @@ const defaultTodos = [
     id: uuidv4(),
   },
   {
-    title: "sport",
+    title: "Спорт",
     tasks: [
-      { completed: false, note: "Продлить аббонимент", id: uuidv4() },
+      { completed: false, note: "Продлить абонимент", id: uuidv4() },
       {
         completed: false,
         note: "Согласовать тренировку на утро",
         id: uuidv4(),
       },
-      { completed: false, note: "Заказать спортивное питанеи", id: uuidv4() },
+      { completed: false, note: "Заказать спортивное питание", id: uuidv4() },
       {
         completed: false,
         note: "Заставить друга пойти в спортзал ",
@@ -55,15 +55,15 @@ const defaultTodos = [
     id: uuidv4(),
   },
   {
-    title: "famaly",
+    title: "Семья",
     tasks: [
       {
         completed: false,
-        note: "день рождение племянника купить игрушку",
+        note: "ДР племянника купить игрушку",
         id: uuidv4(),
       },
       { completed: false, note: "Съездить за продуктами", id: uuidv4() },
-      { completed: false, note: "ЗАбрать товары с WB", id: uuidv4() },
+      { completed: false, note: "Забрать товары с WB", id: uuidv4() },
       { completed: false, note: "Сделать что-то важное ", id: uuidv4() },
       { completed: false, note: "Сделать что-то важное ", id: uuidv4() },
       { completed: false, note: "Сделать что-то важное ", id: uuidv4() },
