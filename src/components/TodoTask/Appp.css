@@ -157,6 +157,16 @@ li {
   background-color: rgb(249, 240, 165);
 }
 
+@media (max-width: 920px) {
+  .buttons button {
+    margin: 13px;
+    padding: 13px;
+    width: 150px;
+    border-radius: 15px;
+    border: none;
+  }
+}
+
 @media (max-width: 760px) {
   .modalBlock {
     position: absolute;
@@ -188,5 +198,68 @@ li {
     border-radius: 10px;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+  .addNotesBlock {
+    width: 100%;
+    text-align: center;
+  }
+  .container {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: space-around;
+    border: 2px solid green;
+    border-radius: 12px;
+  }
+  .infoBlock {
+    display: flex;
+    flex-direction: column;
+    padding-top: 17px;
+    gap: 7px;
+    width: 100%;
+    border: 2px solid green;
+    border-radius: 20px;
+    background-color: honeydew;
+  }
+  .todoItem {
+    display: flex;
+    padding: 20px;
+    margin: 50px auto;
+    width: 90%;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid green;
+    border-radius: 25px;
+  }
+}
+@media (max-width: 645px) {
+  .modalBlock {
+    position: absolute;
+    width: 70%;
+    top: 200px;
+    left: 15%;
+    background-color: aqua;
+    opacity: 1;
+    transition: opacity 0.3s;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .buttons button {
+    margin: 7px;
+    padding: 9px;
+    width: 178px;
+    border-radius: 11px;
+    border: none;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
   }
 }
