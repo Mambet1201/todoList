@@ -1,15 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const CancelModal = ({ cancelModal, setCancelModal }) => {
+  const navigate = useNavigate();
+
+  const cancelBlock = () => {
+    setCancelModal(true);
+    navigate("/");
+  };
   return (
     <div className={cancelModal ? "modalBlock" : "none"}>
       <h2>Подтвердить выбранное действи?</h2>
       <div className="buttons">
-        <Link to="/">
-          <button onClick={() => setCancelModal(true)}>Подтвердить</button>
-        </Link>
-
+        <button onClick={cancelBlock}>Подтвердить</button>
         <button className="deleteBtn" onClick={() => setCancelModal(false)}>
           Отменить
         </button>

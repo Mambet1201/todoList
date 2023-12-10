@@ -2,13 +2,17 @@ import React, { useState } from "react";
 import AddNotes from "./AddNotes";
 
 const AddBllock = ({ todos, setTodos }) => {
-  const [addState, setAddState] = useState(false);
+  const [showInput, setShowInput] = useState(false);
   return (
     <div className="addNotesBlock">
-      {addState ? (
-        <AddNotes todos={todos} setTodos={setTodos} setAddState={setAddState} />
+      {showInput ? (
+        <AddNotes
+          todos={todos}
+          setTodos={setTodos}
+          setShowInput={setShowInput}
+        />
       ) : (
-        <button onClick={() => setAddState(true)} className="addNote">
+        <button onClick={() => setShowInput(true)} className="addNote">
           Создать новую заметку
         </button>
       )}
