@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const AddNewTask = ({ addTask }) => {
+const AddNewTask = ({ addTask, taskTitle, setTaskTitle }) => {
   return (
     <div>
       <input
