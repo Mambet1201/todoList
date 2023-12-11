@@ -64,7 +64,7 @@ const Task = ({
             <button onClick={() => setIsEdit(true)}>
               <GrEdit color="red" />
             </button>
-            <button onClick={() => deleteTask(el.id)}>
+            <button onClick={() => deleteTask(id)}>
               <MdDeleteForever color="red" />
             </button>
           </div>
