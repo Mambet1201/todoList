@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 const AddNewTask = ({ addTask }) => {
-  const [taskTitle, setTaskTitle] = useState("");
   return (
     <div>
       <input
