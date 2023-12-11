@@ -72,6 +72,9 @@ li {
   border: none;
   cursor: pointer;
 }
+.infoBlock p {
+    text-align: center;
+  }
 .modalBlock {
   position: absolute;
   width: 50%;
