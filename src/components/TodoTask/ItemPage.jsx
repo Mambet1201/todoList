@@ -17,6 +17,7 @@ const ItemPage = ({ todos, setTodos }) => {
   const [myTodos, setMyTodos] = useState(
     todos.find((el) => el.id === id).tasks
   );
+  const [taskTitle, setTaskTitle] = useState("");
   const [modalpage, setModalPage] = useState(false);
   const [cancelModal, setCancelModal] = useState(false);
 
@@ -73,7 +74,8 @@ const ItemPage = ({ todos, setTodos }) => {
       <CancelModal cancelModal={cancelModal} setCancelModal={setCancelModal} />
       <div className="addNotes">
         <h3>{itemTitle}</h3>
-        <AddNewTask addTask={addTask} />
+        <AddNewTask addTask={addTask} taskTitle={taskTitle}
+          setTaskTitle={setTaskTitle} />
       </div>
       <div className="itemNotes">
         {myTodos.map((el, index) => (
